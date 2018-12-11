@@ -1,1 +1,89 @@
 # number-recognition
+### test on i7-3630QM CPU:
+- layers: 10,	nodes: 50,	bn: 0
+	- hyperparams(lr: 0.1, momentum: 0.0)
+		- activation: relu			accuracy: 0.1, 	mean_time: 19.706 ms
+		- activation: leaky			accuracy: 0.3, 	mean_time: 19.914 ms
+		- activation: selu			accuracy: 0.3, 	mean_time: 19.983 ms
+		- activation: sigmoid			accuracy: 0.1, 	mean_time: 18.363 ms
+	- hyperparams(lr: 0.1, momentum: 0.9)
+		- activation: relu			accuracy: 0.1, 	mean_time: 19.449 ms
+		- activation: leaky			accuracy: 0.2, 	mean_time: 19.697 ms
+		- activation: selu			accuracy: 0.2, 	mean_time: 19.559 ms
+		- activation: sigmoid			accuracy: 0.1, 	mean_time: 18.594 ms
+	- hyperparams(lr: 0.01, momentum: 0.0)
+		- activation: relu			accuracy: 0.1, 	mean_time: 19.768 ms
+		- activation: leaky			accuracy: 0.3, 	mean_time: 19.458 ms
+		- activation: selu			accuracy: 0.3, 	mean_time: 20.133 ms
+		- activation: sigmoid			accuracy: 0.1, 	mean_time: 18.285 ms
+	- hyperparams(lr: 0.01, momentum: 0.9)
+		- activation: relu			accuracy: 0.1, 	mean_time: 19.603 ms
+		- activation: leaky			accuracy: 0.2, 	mean_time: 18.617 ms
+		- activation: selu			accuracy: 0.1, 	mean_time: 19.153 ms
+		- activation: sigmoid			accuracy: 0.1, 	mean_time: 18.018 ms
+- layers: 10,	nodes: 50,	bn: 1
+	- hyperparams(lr: 0.1, momentum: 0.0)
+		- activation: relu			accuracy: 0.2, 	mean_time: 20.273 ms
+		- activation: leaky			accuracy: 0.8, 	mean_time: 20.561 ms
+		- activation: selu			accuracy: 0.9, 	mean_time: 20.459 ms
+		- activation: sigmoid			accuracy: 0.2, 	mean_time: 20.136 ms
+	- hyperparams(lr: 0.1, momentum: 0.9)
+		- activation: relu			accuracy: 0.4, 	mean_time: 20.108 ms
+		- activation: leaky			accuracy: 0.6, 	mean_time: 20.266 ms
+		- activation: selu			accuracy: 0.7, 	mean_time: 20.654 ms
+		- activation: sigmoid			accuracy: 0.5, 	mean_time: 20.351 ms
+	- hyperparams(lr: 0.01, momentum: 0.0)
+		- activation: relu			accuracy: 0.2, 	mean_time: 20.136 ms
+		- activation: leaky			accuracy: 0.6, 	mean_time: 20.075 ms
+		- activation: selu			accuracy: 0.5, 	mean_time: 20.386 ms
+		- activation: sigmoid			accuracy: 0.2, 	mean_time: 20.142 ms
+	- hyperparams(lr: 0.01, momentum: 0.9)
+		- activation: relu			accuracy: 0.4, 	mean_time: 20.519 ms
+		- activation: leaky			accuracy: 0.7, 	mean_time: 20.473 ms
+		- activation: selu			accuracy: 0.8, 	mean_time: 20.225 ms
+		- activation: sigmoid			accuracy: 0.4, 	mean_time: 20.353 ms
+- layers: 10,	nodes: 100,	bn: 0
+	- hyperparams(lr: 0.1, momentum: 0.0)
+		- activation: relu			accuracy: 0.1, 	mean_time: 21.295 ms
+		- activation: leaky			accuracy: 0.4, 	mean_time: 21.844 ms
+		- activation: selu			accuracy: 0.1, 	mean_time: 21.353 ms
+		- activation: sigmoid			accuracy: 0.1, 	mean_time: 21.093 ms
+	- hyperparams(lr: 0.1, momentum: 0.9)
+		- activation: relu			accuracy: 0.1, 	mean_time: 21.165 ms
+		- activation: leaky			accuracy: 0.5, 	mean_time: 21.059 ms
+		- activation: selu			accuracy: 0.4, 	mean_time: 20.997 ms
+		- activation: sigmoid			accuracy: 0.1, 	mean_time: 21.223 ms
+	- hyperparams(lr: 0.01, momentum: 0.0)
+		- activation: relu			accuracy: 0.1, 	mean_time: 21.267 ms
+		- activation: leaky			accuracy: 0.5, 	mean_time: 21.376 ms
+		- activation: selu			accuracy: 0.2, 	mean_time: 21.493 ms
+		- activation: sigmoid			accuracy: 0.1, 	mean_time: 21.229 ms
+	- hyperparams(lr: 0.01, momentum: 0.9)
+		- activation: relu			accuracy: 0.0, 	mean_time: 21.275 ms
+		- activation: leaky			accuracy: 0.5, 	mean_time: 21.098 ms
+		- activation: selu			accuracy: 0.3, 	mean_time: 21.216 ms
+		- activation: sigmoid			accuracy: 0.1, 	mean_time: 21.105 ms
+- layers: 10,	nodes: 100,	bn: 1
+	- hyperparams(lr: 0.1, momentum: 0.0)
+		- activation: relu			accuracy: 0.4, 	mean_time: 23.664 ms
+		- activation: leaky			accuracy: 0.8, 	mean_time: 23.661 ms
+		- activation: selu			accuracy: 0.9, 	mean_time: 23.754 ms
+		- activation: sigmoid			accuracy: 0.4, 	mean_time: 23.625 ms
+	- hyperparams(lr: 0.1, momentum: 0.9)
+		- activation: relu			accuracy: 0.2, 	mean_time: 23.899 ms
+		- activation: leaky			accuracy: 0.9, 	mean_time: 23.916 ms
+		- activation: selu			accuracy: 0.7, 	mean_time: 23.811 ms
+		- activation: sigmoid			accuracy: 0.6, 	mean_time: 23.589 ms
+	- hyperparams(lr: 0.01, momentum: 0.0)
+		- activation: relu			accuracy: 0.2, 	mean_time: 24.132 ms
+		- activation: leaky			accuracy: 0.7, 	mean_time: 23.786 ms
+		- activation: selu			accuracy: 0.6, 	mean_time: 23.653 ms
+		- activation: sigmoid			accuracy: 0.3, 	mean_time: 23.309 ms
+	- hyperparams(lr: 0.01, momentum: 0.9)
+		- activation: relu			accuracy: 0.4, 	mean_time: 23.880 ms
+		- activation: leaky			accuracy: 0.9, 	mean_time: 24.183 ms
+		- activation: selu			accuracy: 0.9, 	mean_time: 23.787 ms
+		- activation: sigmoid			accuracy: 0.6, 	mean_time: 23.669 ms
+
+## TODO:
+- weights init for SELU activation
